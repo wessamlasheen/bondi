@@ -1,0 +1,248 @@
+:root{
+    --dark-color:#19283f;
+    --green-color:#33d1cc;
+    --red-color:#ff3150;
+    --yellow-color:#ffc400;
+    --section-color:#eff7fa;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+   
+}
+/*start global style*/
+.main-btn{
+    background-color: var(--red-color);
+    color:var(--yellow-color);
+    padding: 0.5rem 1rem;
+}
+.main-btn:hover{
+    color:#fff;
+}
+.main-title:after{
+    content: "";
+    width:120px;
+    height: 2px;
+    background-color: var(--green-color);
+    left: 50%;
+    transform: translateX(-50%);
+    bottom:-20px;
+    position: absolute;
+
+}
+/*end global styles*/
+/*start vavbar*/
+.navbar{
+    background-color: var(--dark-color);
+}
+.navbar .navbar-nav .nav-link{
+    color:#fff;
+
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:hover{
+    color: var(--green-color);
+
+}
+.navbar .search{
+    border-left: 1px solid var(--green-color);
+}
+.navbar .search svg{
+    color:var(--green-color);
+}
+.navbar .navbar-toggler{
+    color: #fff;
+    font-size: 25px;
+    border-color: #fff;
+}
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+    
+}
+/*end navbar*/
+
+/*start landing*/
+.landing{
+    background-color: var(--dark-color);
+    min-height:calc(100vh - 58px);
+}
+/*end landing*/
+/*start featured*/
+.icon-holder{
+    height:200px;
+
+}
+.icon-holder svg{
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+.icon-holder .number{
+    font-size: 9rem;
+    color:var(--section-color);
+}
+.icon-holder .icon{
+    color: var(--green-color);
+}
+.feature .feat h5{
+    color: var(--yellow-color);
+}
+
+/*end featured*/
+
+/*start ourwork*/
+.our-work{
+    background-color: var(--section-color);
+}
+.our-work ul li{
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+.our-work ul li.active{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+}
+.our-work ul li:not(.active):hover{
+    color:var(--red-color)
+    
+}
+.our-work .box{
+    padding:5px;
+    overflow: hidden;
+    position: relative;
+}
+.our-work .box::before{
+    content: attr(data-work);
+    position: absolute;
+    width:calc(100% - 10px);
+    height:calc(100% - 10px);
+    background-color:rgb(51 209 204 / 76%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: bold;
+    transform: translateX(calc(-100% - 5px));
+    transition: 0.3s;
+   
+
+}
+.our-work .box:hover::before{
+    transform: translateX(0);
+}
+
+/*end our work*/
+
+/*start stuff*/
+.stuff .description{
+    max-width: 500px;
+    margin: 0 auto;
+}
+.stuff .img{
+    overflow: hidden;
+}
+
+/*end stuff*/
+
+/*start team*/
+.team{
+    background-color: var(--section-color);
+}
+.team .team-heading{
+    color: var(--yellow-color);
+    text-transform:capitalize;
+}
+.team .team-box{
+    background-color: #fff;
+}
+.team .team-title{
+    color:#fff;
+    background-color: var(--green-color);
+    padding: 1rem 0;
+}
+.team .text{
+    padding: 0.5rem 1rem;
+}
+
+/*end team*/
+
+/*start projects*/
+.projects{
+    background-color: var(--dark-color);
+}
+.projects .txt{
+    color:#fff;
+}
+
+/*end projects*/
+
+
+
+/*start blog*/
+
+.blog .blog-box{
+    border: 1px solid #ddd;
+    border-radius: 5px;
+
+}
+
+/*end blog*/
+
+/*start subscribe*/
+.subscribe{
+    background-color: var(--yellow-color);
+}
+.subscribe form input[type="email"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    padding: 2px;
+}
+.subscribe form input[type="email"]:focus{
+    outline: none;
+}
+.subscribe form input[type="submit"]{
+    border: none;
+    background-color: var(--dark-color);
+    color:var(--yellow-color);
+}
+
+/*end subscribe*/
+
+/*start footer*/
+footer{
+    background-color: var(--dark-color);
+}
+footer .nested-text{
+    color:var(--green-color);
+}
+footer .copy{
+    color:var(--yellow-color);
+}
+
+footer .social svg{
+    padding: 10px 10px;
+   
+}
+footer .social .facebook{
+    background-color:#1877f2;
+    color:#fff;
+
+    
+
+}
+footer .social .twitter{
+    background-color:#1da1f2;
+    color:#fff;
+}
+footer .social .instagram{
+    background-color:#405de6;
+    color:#fff;
+
+}
+footer .social .youtube{
+    background-color:#ff0000;
+    color:#fff;
+
+}
+
+/*end footer*/
